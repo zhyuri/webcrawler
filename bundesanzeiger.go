@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/PuerkitoBio/goquery"
-	"github.com/Sirupsen/logrus"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/PuerkitoBio/goquery"
+	"github.com/Sirupsen/logrus"
 )
 
 const (
@@ -68,7 +69,7 @@ func CrawlBundesanzeiger() {
 		}
 	}
 
-	logrus.Infoln("\nfinish fetching all data, have a nice day, Pingsheng")
+	logrus.Infoln("\nfinish fetching all data, have a nice day")
 }
 
 func findAllPages() []string {
